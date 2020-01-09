@@ -18,16 +18,16 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 public class MyWebMVCConfig {
 
 	@Bean
-	public ViewResolver getViewResolver() {
+public ViewResolver getViewResolver() {
 		InternalResourceViewResolver viewResolver=new InternalResourceViewResolver();
 		viewResolver.setPrefix("/WEB-INF/pages/");
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
 	}
-	
-/*	@Scope(value = "session",proxyMode= ScopedProxyMode.TARGET_CLASS)
+	/*
+@Scope(value = "session",proxyMode= ScopedProxyMode.TARGET_CLASS)
 	public AppUser appUser(HttpServletRequest request) {
 		return new AppUser();
-	}
-	*/
+	}*/
+	
 }

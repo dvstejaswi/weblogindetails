@@ -20,8 +20,7 @@ public class HelloController {
 	public void setService(IUserService service) {
 		this.service=service;
 	}
-	
-/*	
+		
 	private AppUser appUser;
 
     public AppUser getAppUser() {
@@ -31,7 +30,7 @@ public class HelloController {
 	public void setAppUser(AppUser appUser) {
 		this.appUser = appUser;
 	}
-	*/
+	
 	
 	
 	@GetMapping("/userinput")
@@ -51,9 +50,9 @@ public ModelAndView userdetails(@RequestParam("id") int id, @RequestParam("passw
 }
 
 
+/*
 
-
-/*@GetMapping("/logincheck")
+@GetMapping("/logincheck")
 public RedirectView loginCheck(@RequestParam("id") int id, @RequestParam("password") String password) {
 appUser.setId(id);
 appUser.setPassword(password);
